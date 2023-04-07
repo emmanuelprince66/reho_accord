@@ -1,0 +1,20 @@
+.gpt3__maps {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.gpt3__maps-text-content  p {
+    margin: 1rem 0rem;
+}
+.gpt3__maps-content {
+    margin: auto;
+}
+.gpt3__maps-iframe {
+    width: 90%;
+    height: 300px;
+    margin-top: 20px;
+    border: none;
+}
+.gpt3__maps-text {
+    color: red;
+}

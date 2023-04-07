@@ -1,0 +1,60 @@
+.gpt3__teachings-img {
+width: 100%;
+}
+.gpt3__teachings-img img {
+width: 100%;
+object-fit: contain;
+height: 100%;
+}
+.gpt3__teachings-grid {
+width:80%;
+margin: auto;
+display: flex;
+flex-direction: column;
+padding: 2rem 1rem ;
+word-wrap: break-word;
+border: 1px solid rgba(0, 0, 0, 0.125);
+border-radius: 0.8rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+text-transform: capitalize;
+
+}
+
+.gpt3__teachings-grid1 {
+text-align: right;
+}
+.gpt3__teachings-grid1 , h2 {
+font-weight: bold;
+}
+.gpt3__teachings-grid2 {
+text-align: left;
+margin: 1rem;
+}
+.gpt3__teachings-grid , p{
+line-height: 1.5rem;
+
+}
+
+@media screen and (max-width:600px) {
+    .gpt3__teachings-grid {
+    width: 98%;
+    max-height: 60vh;
+    overflow-y: scroll;
+    }
+    
+    .gpt3__teachings-grid1 {
+    margin-bottom: 2rem;
+    }
+    .gpt3__teachings-grid2 {
+    margin: 0;
+    margin-bottom:1rem;
+    }
+    .gpt3__teachings-grid2 , h3{
+    font-size: medium;
+    margin-top: 1rem;
+    }
+    .gpt3__teachings-grid3 , p{
+    font-size: small;
+    }
+}

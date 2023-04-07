@@ -1,0 +1,70 @@
+.gpt3__carder {
+    width: 25rem;
+    height: 25rem;
+    background-color:var(--color-text);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gpt3__carder-cus {
+   width:20rem;
+}
+.gpt3__carder-cus h1 {
+    margin: 25px 0;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.gpt3__carder-cus p {
+    margin: 10px 0;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+.gpt3__carder-cus button {
+    padding: 15px 25px 15px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    width: 180px;
+    border: var(--color-text);
+    background-color: var(--color-blog);
+}
+.gpt3__carder-cus button:hover {
+    scale: 1.2;
+    color:var(--color-text);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.gpt3__carder-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 10px;
+    margin: auto;
+}
+
+ @media screen  and (max-width:600px) {
+    .gpt3__carder-content {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .gpt3__carder {
+        width: 99%;
+        height: 30rem;
+        margin: auto;
+    }
+    .gpt3__carder-cus {
+        width:18rem;
+     }
+}
+
+ @media screen and (max-width:320px){
+    .gpt3__carder {
+       width: 18rem;
+       margin: auto;
+       padding: 1rem;
+    }
+}

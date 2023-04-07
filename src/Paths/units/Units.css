@@ -1,0 +1,64 @@
+.gpt3__units-chior {
+    text-align: center;
+    width: 100%;
+    background-color: var(--color-text);
+    padding: 2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.gpt3__units-chior h1 {
+    margin-bottom: 1rem;
+}
+.gpt3__units-children_img {
+    height: 21.5rem;
+}
+.gpt3__units-chior span {
+    color: red;
+}
+.gpt3__units-chior_content-img_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 29rem;
+}
+.gpt3__units-chior_content-img_item1 p {
+    font-size: 13px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.gpt3__units-chior_content-img_item1 img {
+    width: 100%;
+    height: 20.9rem;
+    object-fit: cover;
+    object-position:50%  40%;
+}
+
+.gpt3__units-chior_content-img_item2 img {
+    width: 100%;
+    height: 20.4rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width:600px) {
+    .gpt3__units-chior {
+        padding: 0.6rem;
+    }
+    .gpt3__units-chior_content-img_item img {
+        max-height: 10rem;
+    }
+    .gpt3__units-chior_content-img_item1 img {
+        height: 23rem;
+        object-position:50%  40%;
+        object-fit: cover;
+    }
+}
+
+/* @media screen and (max-width:400px) {
+    .gpt3__units-chior_content-img_item1 img {
+        height: 1rem;
+        object-fit: bottom;
+    }
+} */

@@ -1,0 +1,88 @@
+
+.gpt3__firstfruit {
+    padding: 40px 20px;
+    margin-bottom: 100px;
+    background-color: var(--color-text);
+}
+.gpt3__firstfruit-full {
+    width:90%;
+    max-height: 30rem;
+    margin: auto;
+}
+.gpt3__firstfruit-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+.gpt3__firstfruit-fuller {
+    position: relative;
+    background: #000;
+    z-index: 10;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.gpt3__firstfruit-content {
+    position: relative;
+    z-index:10;
+    bottom:  22rem;
+    left: 10%;
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+.gpt3__firstfruit-content p {
+    margin: 15px 0px;
+    line-height: 25px;
+}
+.gpt3__firstfruit-button button {
+    padding: 15px 25px 15px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    width: 180px;
+    border: var(--color-text);
+}
+.gpt3__firstfruit-button button:hover {
+   scale: 1.2;
+   color: black;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+}
+
+.gpt3__firstfruit-button button:first-child {
+    background-color: blue;
+    margin-right:10px ;
+    display: none;
+}
+.gpt3__firstfruit-button button:nth-child(2) {
+    background-color: #042c54;
+    z-index: 1;
+}
+
+@media screen and (max-width:600px) {
+  .gpt3__firstfruit-content p {
+    display: none;
+  }
+  .gpt3__firstfruit-content {
+    text-align: center;
+    bottom: 25rem;
+  }
+  .gpt3__firstfruit-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gpt3__firstfruit-button button:first-child {
+    margin: 20px 0px ;
+    display: block;
+}
+}

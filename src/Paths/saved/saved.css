@@ -1,0 +1,130 @@
+.gpt3__input-teachings form {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.gpt3__input-teachings form > input:focus,
+textarea:focus {
+    border: 1px solid #042c54;
+}
+.gpt3__input-teachings form > textarea {
+    height: 150px;
+}
+.gpt3__input-teachings form > h2 {
+    padding-bottom: 1rem ;
+}
+.gpt3__input-teachings form input , textarea {
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border: none;
+    background: #fff;
+    font-size: 12px;
+    color: rgb(0, 0, 32);
+    outline: none;
+}
+.gpt3__input-teachings form button {
+    padding: 10px 15px 10px 15px;
+    border: none;
+    background-color:var(--color-blog);
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 10px;
+  }
+   .gpt3__input-teachings  form button:hover {
+    color: #fff;
+    background-color:#1467bb ;
+  }
+
+.gpt3__saved-contacts {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 5px;
+}
+.general {
+    text-align: center;
+}
+.gpt3__heading {
+    margin-bottom: 2rem;
+}
+.gpt3__saved-contacts_card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid var(--color-text);
+    z-index: 10;
+    max-width: 300px;
+    font-size: small;
+    overflow-wrap: break-word;
+
+}
+
+.gpt3__saved-testimony {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap:5px;
+}
+.gpt3__heading-testimony {
+    margin-top: 2rem;
+}
+
+ .adminBtn{
+     padding: 10px 15px 10px 15px;
+    border: none;
+    background-color:var(--color-blog);
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 1rem;
+}
+.adminBtn:hover {
+    color: #fff;
+  background-color:#1467bb ;
+
+} 
+h4 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: large;
+    color: red;
+    text-transform: uppercase;
+}
+.gpt3__saved-contacts_content {
+    max-width: 260px;
+}
+.gpt3__saved-contacts_content h3 {
+    text-transform: capitalize;
+}
+.gpt3__saved-contacts_content span {
+    font-weight: bold;
+}
+
+@media screen and (max-width:600px) {
+    .gpt3__saved-contacts {
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .gpt3__saved-testimony {
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .gpt3__saved-contacts_card {
+        width: 100%;
+        margin: auto;
+    }
+}
+

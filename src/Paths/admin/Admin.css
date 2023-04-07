@@ -1,0 +1,58 @@
+.gpt3__admin {
+    width: 60%;
+    margin: auto;
+    background-color:var(--color-text);
+    padding: 5rem;
+}
+.gpt3__admin form {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.gpt3__admin span {
+    color: red;
+}
+.gpt3__admin form > input:focus {
+    border: 1px solid var(--color-blog);
+}
+.gpt3__admin form > h2 {
+    padding-bottom: 1rem ;
+}
+.gpt3__admin form input {
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border: none;
+    background: #fff;
+    font-size: 12px;
+    color: rgb(0, 0, 32);
+    outline: none;
+}
+
+.gpt3__admin form .btn {
+    padding: 10px 15px 10px 15px;
+    border: none;
+    background-color:var(--color-blog);
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 10px;
+}
+.gpt3__admin form button:hover {
+    color: #fff;
+  background-color:#1467bb ;
+
+}
+
+@media screen and (max-width:600px) {
+    .gpt3__admin {
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 65%;
+    }
+}

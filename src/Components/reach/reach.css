@@ -1,0 +1,25 @@
+.gpt3__reach {
+    position: fixed;
+    bottom: 3rem;
+    left: 1rem;
+    z-index: 10;
+}
+.gpt3__reach-content {
+    display: flex;
+    justify-content: space-between;
+}
+.gpt3__reach-text {
+    padding-left:0.5rem ;
+    color: red;
+    font-weight: bold;
+}
+
+.gpt3__reach-content_svg :hover{
+    color: var(--color-blog);
+}
+
+@media screen and (max-width:600px) {
+    .gpt3__reach {
+       bottom: 0.2rem;
+    }
+}
