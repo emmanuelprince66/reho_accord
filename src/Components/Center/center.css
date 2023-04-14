@@ -63,6 +63,9 @@
         left: 2rem;
         text-align: center;
     }
+    .gpt3__centers-content {
+    min-height: 400px;
+    }
     .gpt3__centers-content_texts {
         margin: 0;
     }

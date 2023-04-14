@@ -1,15 +1,18 @@
 import React from 'react'
+import {BlurrImage} from '../../BlurrImage'
+import CircularProgress from "@mui/material/CircularProgress";
+import Footer from "../../Components/footer/Footer";
+
+
 import { useState , useEffect } from 'react'
 import { Box } from '@mui/system'
 import './teachings.css'
 import { collection, onSnapshot , addDoc} from "firebase/firestore";
 import  db  from '../../firebase'
-import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
+;
+
 
 
 
@@ -25,12 +28,24 @@ const Item = styled(Paper)(({ theme }) => ({
 const Teachings = () => {
 
     const [teachings , setTeachings] = useState([])
+     const [spin, setSpin] = useState(false);
+    
     
     const getFunc = async () => {
-        await onSnapshot(collection(db, "teachings"), (snapshot) => {
-            setTeachings(snapshot.docs.map((doc) => ({ ...doc.data(), id : doc.id })))
-        })
+    
+    try {
+      await onSnapshot(collection(db, "teachings"), (snapshot) => {
+        setTeachings(snapshot.docs.map((doc) => ({ ...doc.data(), id : doc.id })))
+        setSpin(true)
+        
+    })
+    } catch (e) {
+      setSpin(false);
+      console.error("Error adding document: ", e);
+    }
+      
       }
+      
       useEffect(() => {
         getFunc();
       }, []);
@@ -39,37 +54,51 @@ const Teachings = () => {
     <div>
     <Box sx={{ mt:'70px' ,  marginX:"auto" , mb:"100px"}}>
     <div className='gpt3__teachings-img'>
-       <img src="https://christembassy.org/wp-content/uploads/2019/03/god.jpg" alt="word-img" />
+    <BlurrImage
+            blurhash="LGF5]+Yk^6#M@-5c,1J5@[or[Q6."
+            src="https://christembassy.org/wp-content/uploads/2019/03/god.jpg"
+            punch={1}
+      />
     </div>
     
 
     
     <div className='gpt3__teachings-contents'>
+   
+    {!spin ? <CircularProgress size="15rem"   /> : 
+    
+    
+    teachings.map((teaching) => {
+
+ 
+      return (
+      <div className='gpt3__teachings-grid' key={teaching.id} >
+          <div className='gpt3__teachings-grid1'>
+          <p>Posted At : {new Date(teaching.createdAt.seconds * 1000).toLocaleDateString("en-US")}</p>
+          </div>
+        <h2>{teaching.topic}</h2>
+          
+        <div className='gpt3__teachings-grid2'>
+          <h3>BIBLE SCRIPTURES</h3>
+          <h5>{teaching.verse}</h5>
+          <h5>{teaching.verse2}</h5>
+          <h5>{teaching.reference}</h5>
+        </div>  
+          <div className='gpt3__teachings-grid3'>
+        
+          <p>{teaching.explanation}</p>
+          <p>{teaching.conclusion}</p>
+          </div>
+        </div> 
+      
+      )
+      })
+    
+    
+    }
     
     { 
-teachings.map((teaching) => {
 
-return (
-  <div className='gpt3__teachings-grid' key={teaching.id} >
-    <div className='gpt3__teachings-grid1'>
-    <p>Posted At : {new Date(teaching.createdAt.seconds * 1000).toLocaleDateString("en-US")}</p>
-    </div>
-  <h2>{teaching.topic}</h2>
-    
-  <div className='gpt3__teachings-grid2'>
-    <h3>BIBLE SCRIPTURES</h3>
-    <h5>{teaching.verse}</h5>
-    <h5>{teaching.verse2}</h5>
-    <h5>{teaching.reference}</h5>
-  </div>  
-    <div className='gpt3__teachings-grid3'>
-  
-    <p>{teaching.explanation}</p>
-    <p>{teaching.conclusion}</p>
-    </div>
-  </div> 
-)
-})
 
 
 }
@@ -77,6 +106,7 @@ return (
     </div>
     </Box>
     
+    <Footer />
     
     </div>
   )

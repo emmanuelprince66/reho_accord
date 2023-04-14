@@ -15,9 +15,7 @@ const Reach = () => {
           <Textsms sx={{ color:'blue' , height:'30px' , width:"30px" }} />
         </span>
           </a>
-             <div className='gpt3__reach-text'>
-                <p>message us</p>
-             </div>
+            
         </div>
       
     </div>

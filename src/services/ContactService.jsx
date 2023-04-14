@@ -2,11 +2,11 @@ class ContactService {
     static contactLists = [
         {
             "id":1,
-            "heading" : "Pastor Paul Adewodun's Podcasts",
-            "title" : "Click Here to Listen to the Latest Sermons From Daddy G.O on all digital Platforms",
+            "heading" : "Study God's Word with Pastor Paul Adewodun",
+            "title" : "Click Here to veiw to the Latest Sermons From Daddy G.O ",
             "small" :"and be blessed in Jesus Name.",
-             "btext" : "Listen Now",
-             "pathname": "/"
+             "btext" : "Veiw Now",
+             "pathname": "/teachings"
 
         },
         {   "id":2,

@@ -104,6 +104,7 @@ const NavBar = () => {
             >
               <span className="gpt3__navbar-a">TEACHINGS</span>
             </NavLink>
+            
             <NavLink
               to="/admin"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -208,14 +209,22 @@ const NavBar = () => {
               >
                 <span className="gpt3__navbar-a">PROGRAMS</span>
               </NavLink>
-              <NavLink
+              
+            
+              
+            </MenuItem>
+            <Divider color="#8aa4fc" />
+
+           <MenuItem>
+           <NavLink
                 to="/teachings"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
               >
                 <span className="gpt3__navbar-a">TEACHINGS</span>
               </NavLink>
-            </MenuItem>
-            <Divider color="#8aa4fc" />
+           </MenuItem>
+           <Divider color="#8aa4fc" />
+           
 
             <MenuItem>
               <NavLink

@@ -20,6 +20,10 @@ margin-bottom: 2rem;
 text-transform: capitalize;
 
 }
+.gpt3__teachings-contents {
+margin-top: 1rem;
+
+}
 
 .gpt3__teachings-grid1 {
 text-align: right;
