@@ -65,7 +65,7 @@ const rows = [
     "House Fellowship",
     "Sunday",
     "4pm - 6pm",
-    "Minister Abraham's Home"
+    ""
   ),
 ];
 

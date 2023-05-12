@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Pagination, Navigation } from "swiper";
 import { BlurrImage } from "../../BlurrImage";
-import image10 from "../../assets/images/image10.jpg";
+import image5 from "../../assets/images/image5.jpg";
 import image11 from "../../assets/images/image11.jpg";
 import image12 from "../../assets/images/image12.jpg";
 import image13 from "../../assets/images/image13.jpg";
@@ -123,15 +123,11 @@ const Units = () => {
                   <div className="gpt3__units-chior_content-img_item1">
                   <BlurrImage
                       blurhash="LGF5]+Yk^6#M@-5c,1J5@[or[Q6."
-                       src={image10}
+                       src={image5}
                       punch={1}
                       />
                     <p>
-                      Mr Paul Abraham is a Great Spirit Filled Minister of God ,
-                      he's the current Music Director of Rehoboth Living Spring
-                      Choir.he is highly Skilled in playing the piano and other
-                      musical instruments and he loves every opportuinity that
-                      invovles him sharing his knowledge of music.
+               Chior Leader.
                     </p>
                   </div>
                 </Item>
@@ -204,12 +200,7 @@ const Units = () => {
                       punch={1}
                       />
                     <p>
-                      Minister Damilola is a spirit-filled gifted children
-                      co-ordinator, from her first moments in the church God
-                      opened her eyes to see the needs of the church and ever
-                      since then she had served as the children's teacher
-                      joyfully and help naviagte the path of the kids towards
-                      christ.
+                   Children's Department Leader.
                     </p>
                   </div>
                 </Item>

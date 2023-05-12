@@ -18,12 +18,15 @@
 .gpt3__units-chior span {
     color: red;
 }
+.gpt3__units-chior_content-img_item {
+   max-height: fit-content;
+}
 .gpt3__units-chior_content-img_item img {
     width: 100%;
-    height: 100%;
+    max-height: 22.1rem;
     object-fit: cover;
-    max-height: 29rem;
 }
+
 .gpt3__units-chior_content-img_item1 p {
     font-size: 13px;
     text-align: center;
@@ -33,7 +36,7 @@
     width: 100%;
     height: 20.9rem;
     object-fit: cover;
-    object-position:50%  40%;
+    object-position:50%  15%;
 }
 
 .gpt3__units-chior_content-img_item2 img {

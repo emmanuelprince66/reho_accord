@@ -197,7 +197,6 @@ const What = () => {
           </div>
           <div className="gpt3__what-giving_acct">
             <p>4035920017 FCMB Bank</p>
-            <p>2104362880 First Bank</p>
           </div>
         </div>
 
@@ -209,7 +208,7 @@ const What = () => {
 
             <div className="gpt3__what-counsel-texts">
               <p>
-                Always Remeneber you are braver than you believe, stronger than
+                Always Remenber you are braver than you believe, stronger than
                 you seem , smarter than you think and twice as beautiful as
                 you've ever imagine.
               </p>
