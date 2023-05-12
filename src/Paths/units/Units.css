@@ -36,7 +36,7 @@
     width: 100%;
     height: 20.9rem;
     object-fit: cover;
-    object-position:50%  15%;
+    object-position:50%  5%;
 }
 
 .gpt3__units-chior_content-img_item2 img {
@@ -59,9 +59,10 @@
     }
 }
 
-/* @media screen and (max-width:400px) {
-    .gpt3__units-chior_content-img_item1 img {
-        height: 1rem;
-        object-fit: bottom;
+@media screen and (max-width:600px) {
+    .gpt3__units-chior_content-img_item1 img  ,  .gpt3__units-chior_content-img_item2 img{
+        height: 15rem;
+        object-fit: cover;
+        object-position: 50%  5%;
     }
-} */
+}
